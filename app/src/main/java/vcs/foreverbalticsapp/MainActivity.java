@@ -28,7 +28,9 @@ public class MainActivity extends AppCompatActivity {
 
         Button btn1;
         Button btn2;
-
+        Button btn3;
+        Button btn4;
+        Button btn5;
 
         btn1 = findViewById(R.id.btn1);
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -47,80 +49,30 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btn3 = findViewById(R.id.btn3);
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ActivityMagazines.class);
+                startActivity(intent);
+            }
+        });
+        btn4 = findViewById(R.id.btn4);
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ActivityPrices.class);
+                startActivity(intent);
+            }
+        });
+        btn5 = findViewById(R.id.btn5);
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ActivityOther.class);
+                startActivity(intent);
+            }
+        });
     }
 
-//        // initialising the web view
-//        WebView wv = (WebView) findViewById(R.id.webview);
-//
-//        // add your link here
-//        wv.loadUrl("https://foreverliving.box.com/s/v5wjjqion318z6pjiez2ceg2a8kryy5z");
-//        wv.setWebViewClient(new Client());
-//        WebSettings ws = wv.getSettings();
-//
-//        // Enabling javascript
-//        ws.setJavaScriptEnabled(true);
-//        wv.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
-//        wv.clearCache(true);
-//        wv.clearHistory();
-//
-//        // download manager is a service that can be used to handle downloads
-//        wv.setDownloadListener(new DownloadListener() {
-//            @Override
-//            public void onDownloadStart(String url, String s1, String s2, String s3, long l) {
-//                DownloadManager.Request req = new DownloadManager.Request(Uri.parse(url));
-//                req.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
-//                DownloadManager dm = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
-//                dm.enqueue(req);
-//                Toast.makeText(MainActivity.this, "Downloading....", Toast.LENGTH_SHORT).show();
-//            }
-//        });
-//    }
-//
-//    private class Client extends WebViewClient {
-//        // on page started load start loading the url
-//        @Override
-//        public void onPageStarted(WebView view, String url, Bitmap favicon) {
-//            super.onPageStarted(view, url, favicon);
-//        }
-//
-//        // load the url of our drive
-//        @Override
-//        public boolean shouldOverrideUrlLoading(WebView view, String url) {
-//            view.loadUrl(url);
-//            return true;
-//        }
-//
-//        @Override
-//        public void onPageFinished(WebView view, String url) {
-//            super.onPageFinished(view, url);
-//        }
-//
-//        public void onReceivedError(WebView webView, int errorCode, String description, String failingUrl) {
-//            // if stop loading
-//            try {
-//                webView.stopLoading();
-//            } catch (Exception e) {
-//            }
-//
-//            if (webView.canGoBack()) {
-//                webView.goBack();
-//            }
-//
-//            // if loaded blank then show error
-//            // to check internet connection using
-//            // alert dialog
-//            webView.loadUrl("about:blank");
-//            AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
-//            alertDialog.setTitle("Error");
-//            alertDialog.setMessage("Check your internet connection and Try again.");
-//            alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, "Try Again", new DialogInterface.OnClickListener() {
-//                public void onClick(DialogInterface dialog, int which) {
-//                    finish();
-//                    startActivity(getIntent());
-//                }
-//            });
-//
-//            alertDialog.show();
-//            super.onReceivedError(webView, errorCode, description, failingUrl);
-//        }
 }
