@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ForeverBalticsApp">
         <activity
+            android:name=".ActivityLiterature"
+            android:exported="false" />
+        <activity
             android:name=".ActivityNews"
             android:exported="false" />
         <activity

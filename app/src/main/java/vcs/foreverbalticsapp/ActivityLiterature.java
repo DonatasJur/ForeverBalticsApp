@@ -16,18 +16,18 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-public class ActivityNews extends AppCompatActivity {
+public class ActivityLiterature extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_news);
+        setContentView(R.layout.activity_literature);
 
         // initialising the web view
-        WebView wv = (WebView) findViewById(R.id.webview1);
+        WebView wv = (WebView) findViewById(R.id.webview2);
 
         // add your link here
-        wv.loadUrl("https://foreverliving.box.com/s/v5wjjqion318z6pjiez2ceg2a8kryy5z");
+        wv.loadUrl("https://foreverliving.box.com/s/6jz34qj3g09g6rss961591vhxnqumyby");
         wv.setWebViewClient(new Client());
         WebSettings ws = wv.getSettings();
 
@@ -45,7 +45,7 @@ public class ActivityNews extends AppCompatActivity {
                 req.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
                 DownloadManager dm = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
                 dm.enqueue(req);
-                Toast.makeText(ActivityNews.this, "Downloading....", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ActivityLiterature.this, "Downloading....", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -84,7 +84,7 @@ public class ActivityNews extends AppCompatActivity {
             // to check internet connection using
             // alert dialog
             webView.loadUrl("about:blank");
-            AlertDialog alertDialog = new AlertDialog.Builder(ActivityNews.this).create();
+            AlertDialog alertDialog = new AlertDialog.Builder(ActivityLiterature.this).create();
             alertDialog.setTitle("Error");
             alertDialog.setMessage("Check your internet connection and Try again.");
             alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, "Try Again", new DialogInterface.OnClickListener() {
