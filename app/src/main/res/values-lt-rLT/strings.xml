@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ForeverBalticsApp</string>
+
+    <string name="News">Naujienos</string>
+    <string name="Literature">Literatūra</string>
+    <string name="Magazines">Žurnalai</string>
+    <string name="Prices">Kainos</string>
+    <string name="Other">Kita</string>
+    <string name="ChangeLang">Kalba</string>
+</resources>

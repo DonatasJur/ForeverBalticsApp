@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">ForeverBalticsApp</string>
+
+    <string name="News">Uudised</string>
+    <string name="Literature">Kirjandus</string>
+    <string name="Magazines">Ajakirjad</string>
+    <string name="Prices">Hinnad</string>
+    <string name="Other">Muud</string>
+    <string name="ChangeLang">Keel</string>
+</resources>

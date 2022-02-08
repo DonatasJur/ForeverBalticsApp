@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -21,33 +22,66 @@
     <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <Button
+        android:id="@+id/ChangeLang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ChangeLang"
+        app:layout_constraintBottom_toBottomOf="@+id/btn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:textColorHint="@color/white"/>
+
+    <Button
         android:id="@+id/btn1"
         android:layout_width="275dp"
         android:layout_height="65dp"
-        android:text="News" />
+        android:hint="@string/News"
+        app:layout_constraintBottom_toTopOf="@+id/btn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColorHint="@color/white"/>
 
     <Button
         android:id="@+id/btn2"
         android:layout_width="275dp"
         android:layout_height="65dp"
-        android:text="Literature" />
+        android:hint="@string/Literature"
+        app:layout_constraintBottom_toTopOf="@+id/btn3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColorHint="@color/white"/>
 
     <Button
         android:id="@+id/btn3"
         android:layout_width="275dp"
         android:layout_height="65dp"
-        android:text="Magazines" />
+        android:hint="@string/Magazines"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColorHint="@color/white"/>
 
     <Button
         android:id="@+id/btn4"
         android:layout_width="275dp"
         android:layout_height="65dp"
-        android:text="Prices" />
+        android:hint="@string/Prices"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn3"
+        android:textColorHint="@color/white"/>
 
     <Button
         android:id="@+id/btn5"
         android:layout_width="275dp"
         android:layout_height="65dp"
-        android:text="Other" />
+        android:hint="@string/Other"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn4"
+        android:textColorHint="@color/white"/>
 
-</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

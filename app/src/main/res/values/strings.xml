@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">ForeverBalticsApp</string>
+    <string name="app_name" translatable="false">ForeverBalticsApp</string>
+
+    <string name="News">News</string>
+    <string name="Literature">Literature</string>
+    <string name="Magazines">Magazines</string>
+    <string name="Prices">Prices</string>
+    <string name="Other">Other</string>
+    <string name="ChangeLang">Language</string>
+
 </resources>
