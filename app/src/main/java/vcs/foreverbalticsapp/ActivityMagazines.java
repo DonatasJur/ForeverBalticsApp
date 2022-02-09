@@ -27,7 +27,7 @@ public class ActivityMagazines extends AppCompatActivity {
         WebView wv = (WebView) findViewById(R.id.webview3);
 
         // add your link here
-        wv.loadUrl("https://foreverliving.box.com/s/z28te9yfx986i4us0uodv1tcq3yqpwm8");
+        wv.loadUrl("https://drive.google.com/drive/folders/1c1xbbt3d0l1jXrmWjBfnWPrZKZngROCc?usp=sharing");
         wv.setWebViewClient(new Client());
         WebSettings ws = wv.getSettings();
 

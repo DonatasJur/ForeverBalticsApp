@@ -93,13 +93,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 if (i == 0) {
-                    setLocale("LT");
+                    setLocale("lt");
                     recreate();
                 } else if (i == 1) {
-                    setLocale("LV");
+                    setLocale("lv");
                     recreate();
                 } else if (i == 2) {
-                    setLocale("EE");
+                    setLocale("et");
                     recreate();
                 }
 
